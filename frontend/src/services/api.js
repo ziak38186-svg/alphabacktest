@@ -64,3 +64,7 @@ export const healthCheck = () =>
     .get('/health')
     .then((r) => r.data)
     .catch(() => ({ status: 'offline' }))
+
+// History
+export const getHistory = (limit = 20) =>
+  api.get(`/backtest/history?limit=${limit}`).then((r) => r.data)
