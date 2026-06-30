@@ -19,3 +19,5 @@ frontend/dist/
 frontend/.env
 .DS_Store
 *.log
+*.db
+*.sqlite3
